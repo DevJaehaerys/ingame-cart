@@ -14,7 +14,7 @@ namespace Oxide.Plugins
 
     public class jcart : CovalencePlugin
     {
-        private const string ApiUrl = "http://127.0.0.1:8000/api/userItem/{0}";
+        private const string ApiUrl = "http://127.0.0.1:8000/api/cart/userItem/{0}";
         private const string ApiKey = "SSSS";
         private const float Timeout = 200f;
 
@@ -49,7 +49,7 @@ namespace Oxide.Plugins
                     server.Command(commandz["command"].ToString(), Array.Empty<string>());
 
                     // Make a request to remove the item with the given ID from the API
-                    string url2 = $"http://127.0.0.1:8000/api/removeItem/{itemId}";
+                    string url2 = $"http://127.0.0.1:8000/api/cart/removeItem/{itemId}";
                     webrequest.Enqueue(url2, null, (code2, response2) =>
                     {
                         if (code2 != 200 || response2 == null)
