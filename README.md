@@ -1,3 +1,2 @@
 # ingame-cart
-Plugin to accept game in the game
-Made by ChatGPT))
+Plugin to accept items in the RUST from JCMS.
